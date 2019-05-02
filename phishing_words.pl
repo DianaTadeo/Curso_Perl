@@ -1,4 +1,8 @@
 #!/usr/bin/perl
+
+#Autor: Diana Tadeo
+#Deben de ejecutarse el script del primer y segundo ejercicio antes.s
+#Ejercicio 3.
 use LWP::Simple;
 
 open(FH, "sitios_activos.txt") or die ("No se pudo abrir el archivo\n");
