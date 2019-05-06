@@ -1,0 +1,26 @@
+No.	País Habitantes por km²
+1	Macao	20479.2
+2	Mónaco	19347.5
+3	Singapur	7805.6
+4	Hong Kong	6659.2
+5	Bangladesh	1115.4
+6	Taiwán	654.4
+7	Corea del Sur 	512.9
+8	Países Bajos	412.4
+9	India 	407.4
+10	Israel	394.8
+11	Bélgica	372.5
+12	Filipinas	349.7
+13	Japón	335.4
+14	Sri Lanka	326.8
+15	Vietnam	288.4
+16	Reino Unidos	271.0
+17	Pakistán	247.5
+18	Liechtenstein	237.0
+19	Luxemburgo	231.4
+20	Alemania	231.3
+21	Corea del Norte	211.5
+22	Nigeria	206.6
+23	Suiza	205.0
+24	Italia	200.9
+25	China	145.0
