@@ -5,6 +5,26 @@ use IO::Socket::INET;
 use lib ".";
 require Operaciones;
 
+=head1 Calculadora Cientifica Remota
+
+Programa que ejecuta un servidor de calculadora cientifica TCP.
+
+=head1 SYNOPSIS
+
+    perl calculadora_cientifica_remota.pl
+
+=head1 DESCRIPTION
+
+Este programa permite ejecutar un servidor tcp a traves del prueto
+7777 con el cual, cualquiera que se conecte a el, muestra las opciones
+de la calculadora y permite recibir expresiones y devolver el resultado.
+
+=head1 AUTHOR
+
+Diana Tadeo
+=cut
+
+
 sub despliegaMenu{
 	my $cad="";
 		$cad=$cad. "-------------------Operaciones------------------\n";
@@ -76,7 +96,7 @@ sub evalua{
 	return eval($expr);
 }
 
-my $socket = new IO::Socket::INET (
+my $socket = new IO::Sotercket::INET (
     LocalHost => '0.0.0.0',
     LocalPort => '7777',
     Proto => 'tcp',
