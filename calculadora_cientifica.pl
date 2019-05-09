@@ -1,6 +1,7 @@
 use feature "switch";
 use Math::Trig;
 use strict;
+use Socket;
 use lib ".";
 require Operaciones;
 
