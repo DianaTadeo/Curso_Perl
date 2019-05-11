@@ -1,7 +1,7 @@
 #!perl
 use strict;
 
-open(FD, $ARGV[0]) or die "No se pudo abrir el archivo $ARGV[0]\n";
+open(FD, "nmap $ARGV[0]|") or die "No se pudo ejecutar.\n";
 
 my $num_hostsUp=0;
 my $numTCP=0;
@@ -55,17 +55,17 @@ open(REPORTE, '>', "nmap_report.txt" ) or die "No se pudo crear el archivo";
 print REPORTE "HOST: $num_hostsUp\n";
 print REPORTE "TCP: $numTCP\n";
 print REPORTE "UDP: $numUDP\n";
-print REPORTE "--------OPEN PORT'S: $numOpen \n";
+print REPORTE "-OPEN PORT'S: $numOpen\n";
 foreach(keys %port_open){
-	print REPORTE "$_ : $port_open{$_}\n";
+	print REPORTE "$_: $port_open{$_}\n";
 }
-print REPORTE "---------CLOSED PORT'S: $numClosed\n";
+print REPORTE "-CLOSED PORT'S: $numClosed\n";
 foreach(keys %port_closed){
-	print REPORTE "$_ : $port_open{$_}\n\n";
+	print REPORTE "$_: $port_open{$_}\n\n";
 }
-print REPORTE "---------OTHER: $numOther\n";
+print REPORTE "-OTHER: $numOther\n";
 foreach(keys %port_closed){
-	print REPORTE "$_ : $port_open{$_}\n\n";
+	print REPORTE "$_: $port_open{$_}\n\n";
 }
 
 close(REPORTE);
